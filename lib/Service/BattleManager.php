@@ -2,6 +2,9 @@
 
 namespace Battle;
 
+use AbstractShip;
+use BattleResult;
+
 class BattleManager
 {
     // normal battle mode
