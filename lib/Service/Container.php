@@ -1,5 +1,7 @@
 <?php
 
+namespace Service;
+
 use Battle\BattleManager;
 
 class Container
