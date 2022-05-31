@@ -2,6 +2,7 @@
 
 namespace Service;
 
+use Model\BountyHunterShip;
 use Model\RebelShip;
 use Model\Ship;
 use Model\AbstractShip;
@@ -33,6 +34,9 @@ class ShipLoader
         foreach ($shipsData as $shipData) {
             $ships[] = $this->createShipFromData($shipData);
         }
+
+        // Boba Fett's famous ship
+        $ships[] = new BountyHunterShip('Slave I');
 
         return new ShipCollection($ships);
     }
