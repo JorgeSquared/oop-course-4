@@ -29,7 +29,7 @@ class BattleResult implements \ArrayAccess
     }
 
     /**
-     * @return Ship|null
+     * @return AbstractShip|null
      */
     public function getWinningShip()
     {
@@ -37,7 +37,7 @@ class BattleResult implements \ArrayAccess
     }
 
     /**
-     * @return Ship|null
+     * @return AbstractShip|null
      */
     public function getLosingShip()
     {
@@ -56,7 +56,7 @@ class BattleResult implements \ArrayAccess
 
     public function offsetExists($offset)
     {
-        return property_exists($this, $offset)
+        return property_exists($this, $offset);
     }
 
     public function offsetGet($offset)
